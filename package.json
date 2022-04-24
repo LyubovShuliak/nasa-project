@@ -1,0 +1,28 @@
+{
+  "name": "nasa-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "cd server && npm start",
+    "client": "cd client && npm start ",
+    "dev": "yarn server & yarn client",
+    "deploy": "npm run build --prefix client && npm start --prefix server",
+    "dev_deploy": "rm -r ./server/public &&   npm run build --prefix client && npm start --prefix server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LyubovShuliak/nasa-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LyubovShuliak/nasa-project/issues"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "mongoose": "^6.2.11"
+  }
+}
